@@ -35,5 +35,9 @@ source $ZSH/oh-my-zsh.sh
 
 fpath=(/usr/local/share/zsh-completions $fpath)
 
+# git workflow aliases
+alias review-monday="git log --since=\"3 days ago\" --stat --graph integration"
+alias review-yesterday="git log --since=yesterday --stat --graph integration"
+
 # Load local configs
 source $HOME/.zshrc.local
